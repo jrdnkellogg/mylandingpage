@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <nav class="topnav" id="myTopnav">
+      <!-- <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <script src="{% static 'jscript/myjava.js' %}"charset="utf-8"></script>
+        <li>
+          <script src="{% static 'jscript/myjava.js' %}"charset="utf-8"></script>
+          <a class="icon"href="#" onclick="myFunction()">
+            <i class="fa fa-bars fa-lg"></i>
+          </a>
+        </li>
+      </ul> -->
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Projects</a>
+      <script src="{% static 'jscript/myjava.js' %}"charset="utf-8"></script>
+      <a class="icon"href="#" onclick="myFunction()">
+        <i class="fa fa-bars fa-lg"></i>
+      </a>
+
+
+    </nav>
+    <hr>
+    <div class="container">
+      {% block bodyblock %}
+
+      {% endblock %}
+    </div>
+
+  </body>
+</html>
